@@ -18,9 +18,7 @@ Widget buildRecipeCard(Recipe recipe) {
           const SizedBox(height: 13),
           Text(
             recipe.label,
-            style: const TextStyle(
-              fontSize: 20.0,
-            ),
+            style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
           ),
         ],
       ),
