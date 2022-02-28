@@ -40,7 +40,20 @@ class _RecipeDetailState extends State<RecipeDetail> {
               data['label'],
               style: const TextStyle(fontSize: 18),
             ),
-            // TODO: Add Expanded
+            Expanded(
+              // 8
+              child: ListView.builder(
+                padding: const EdgeInsets.all(7.0),
+                itemCount: data['ingredients'].length,
+                itemBuilder: (BuildContext context, int index) {
+                  final ingredient = data['ingredients'][index];
+                  // 9
+                  // TODO: Add ingredient.quantity
+                  return Text(
+                      '${ingredient.quantity} ${ingredient.measure} ${ingredient.name}');
+                },
+              ),
+            ),
 
             // TODO: Add Slider() here
           ],

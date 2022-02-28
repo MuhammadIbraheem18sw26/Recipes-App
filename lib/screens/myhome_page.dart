@@ -33,6 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       Get.toNamed(RecipeDetail.recipeDetail, arguments: {
                         'label': recipe[index].label,
                         'imgUrl': recipe[index].imageUrl,
+                        'ingredients': recipe[index].ingredients,
+                        'servings': recipe[index].servings,
                       });
                     },
                     child: buildRecipeCard(recipe[index]));
